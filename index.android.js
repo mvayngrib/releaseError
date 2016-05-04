@@ -1,15 +1,17 @@
-'use strict';
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ */
 
 require('./shim');
 
-const React = require('react-native');
-const {
+import React, {
   AppRegistry,
   Component,
   StyleSheet,
   Text,
   View
-} = React;
+} from 'react-native';
 
 class releaseError extends Component {
   render() {
