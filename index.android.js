@@ -3,7 +3,7 @@
  * https://github.com/facebook/react-native
  */
 
-require('./shim');
+process.env.NODE_ENV = 'development';
 
 import React, {
   AppRegistry,
