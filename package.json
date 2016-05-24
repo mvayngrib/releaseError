@@ -3,10 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "nodeify": "./node_modules/.bin/rn-nodeify --install process,buffer"
   },
   "dependencies": {
-    "react": "^0.14.8",
+    "buffer": "^3.6.0",
+    "process": "^0.11.3",
+    "react": "^15.0.2",
     "react-native": "^0.26.0-rc"
+  },
+  "devDependencies": {
+    "rn-nodeify": "^6.0.0"
   }
 }

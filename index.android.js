@@ -3,20 +3,32 @@
  * https://github.com/facebook/react-native
  */
 
+require('./shim')
 process.env.NODE_ENV = 'development';
 
 import React, {
-  AppRegistry,
   Component,
+} from 'react';
+
+import {
+  TabBarIOS,
+  NavigatorIOS,
   StyleSheet,
-  Text,
-  View
+  AppRegistry,
+  View,
+  Text
 } from 'react-native';
 
 class releaseError extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <Text style={styles.welcome}>
+          process.env.NODE_ENV = {process.env.NODE_ENV}
+        </Text>
+        <Text style={styles.welcome}>
+          {new Buffer('blah').toString()}
+        </Text>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
